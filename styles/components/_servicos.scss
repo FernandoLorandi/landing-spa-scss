@@ -1,0 +1,29 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#servicos {
+    background: variaveis.$gradiente-primario;
+    padding: 3rem 0;
+    .cards{
+        @include mixins.margem-central(80%);
+        display: flex;
+        gap: 1.5rem;
+        .card{ 
+            background: variaveis.$gradiente-secundario;
+            padding: 1rem 1.5rem;
+            border: 1px solid white;
+            border-radius: 1rem;
+            text-align: center;
+            &-titulo{
+                @include mixins.font-object(variaveis.$font-title, 1.2rem, variaveis.$cor-primaria);
+                font-weight: 500;
+            }
+            &-texto{
+                @include mixins.font-object(variaveis.$font-content, 1.2rem, variaveis.$cor-primaria);
+                font-weight: 400;
+
+            }
+        }
+        
+    }
+}

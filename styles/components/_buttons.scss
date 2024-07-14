@@ -1,0 +1,17 @@
+@use '../abstract/variaveis';
+
+.btn-main {
+    width: 280px;
+    padding: 16px;
+    background: variaveis.$cor-secundaria;
+    color: white;
+    border-radius: 40px;
+    
+    font-family: variaveis.$font-content;
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    &:hover{
+        background: variaveis.$cor-terciaria;
+    }
+}

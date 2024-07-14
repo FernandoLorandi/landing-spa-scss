@@ -1,0 +1,28 @@
+@use '../abstract/variaveis';
+@use '../abstract/mixins';
+
+#home {
+    max-width: 1040px;
+    @include mixins.margem-central(80%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .textos-home {
+    max-width: 464px;
+    h1{
+        font-size: 42px;
+        color: variaveis.$cor-primaria;
+        font-family: variaveis.$font-title;
+        margin-bottom: 2rem;
+        span{
+            color: variaveis.$cor-secundaria;
+        }
+    }
+    }
+    .img-home{
+        max-width: 474px;
+        img{
+            width: 100%;
+        }
+    }
+}
